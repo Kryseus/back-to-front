@@ -1,10 +1,18 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 
-const MyCard = () => {
+const MyCard = ({ recipe }) => {
   return (
-    <Card>
-      <Card.Body>This is some text within a card body.</Card.Body>
+    <Card border="primary" style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={ recipe.imageurl }></Card.Img>
+      <Card.Body>
+        <Card.Title>
+          { recipe.name }
+        </Card.Title>
+        <Card.Text>
+          { recipe.description }  
+        </Card.Text>       
+      </Card.Body>
     </Card>
   );
 };
