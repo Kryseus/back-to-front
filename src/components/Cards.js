@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 const MyCard = ({ recipe }) => {
   return (
-    <Card border="primary" style={{ width: '18rem' }}>
+    <Card border="primary" style={{ width: '100%' }}>
       <Card.Img variant="top" src={ recipe.imageurl }></Card.Img>
       <Card.Body>
         <Card.Title>
@@ -16,5 +16,4 @@ const MyCard = ({ recipe }) => {
     </Card>
   );
 };
-
 export default MyCard;
